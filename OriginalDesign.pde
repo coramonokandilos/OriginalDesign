@@ -3,12 +3,12 @@ int y = 85;
 
 void setup()
 {
-	size(400, 400);
+	size(400, 300);
 }
 
 void draw()
 {
-  background();
+  Background();
   body();
   head();
   ears();
@@ -31,17 +31,18 @@ void draw()
   }
 }
 
-void background()
+void Background()
 {
 	background(107, 53, 34);
 	fill(89, 5, 5);
 	noStroke();
-	rect(-1, 0, 401, 230);
+	rect(0, 0, 401, 230);
 	fill(0, 0, 0);
 }
 
 void body()
 {
+	fill(0, 0, 0);
 	ellipse(100, 200, 100, 50);
 }
 
